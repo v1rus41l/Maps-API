@@ -7,7 +7,6 @@ import requests
 
 a = input('Координаты через пробел: ').split()
 coords = a[1] + ',' + a[0]
-print(coords)
 z = int(input('Масштаб: '))
 map_request = f"https://static-maps.yandex.ru/1.x/?l=map&ll={coords}&z={z}"
 response = requests.get(map_request)
